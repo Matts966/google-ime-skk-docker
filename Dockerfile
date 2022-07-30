@@ -1,3 +1,3 @@
-FROM ruby:2.6-alpine
-RUN gem install google-ime-skk
-CMD ["google-ime-skk"]
+FROM rust
+RUN cargo install gskkserv
+CMD ["gskkserv"]
